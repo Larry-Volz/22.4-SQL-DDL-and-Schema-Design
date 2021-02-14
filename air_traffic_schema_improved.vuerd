@@ -1,0 +1,1173 @@
+{
+  "canvas": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    }
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "tickets",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "PK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7cc0b9f5-6dda-4cdb-ddb0-e7370483c58a"
+          },
+          {
+            "name": "passenger_id",
+            "comment": "REFERENCES passengers",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 80,
+              "widthComment": 161,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f393fdd5-0103-0a9c-19dc-a232d7a4a1f0"
+          },
+          {
+            "name": "seat_id",
+            "comment": "REFERENCES seats",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 126,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1666efbc-38cd-9cf2-8cc3-10c37d43a970"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 702.0800248291014,
+          "top": 677.440007470704,
+          "zIndex": 481,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "e0a6126e-f881-d362-05d5-4acc6a04d948"
+      },
+      {
+        "name": "passengers",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "PK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0036c865-5895-c4bd-f863-e19037659ea8"
+          },
+          {
+            "name": "first_name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "db10006b-8393-a87a-35cc-446258082a80"
+          },
+          {
+            "name": "last_name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "58f45af2-9a3c-27ae-55d7-e39c245f8ffe"
+          },
+          {
+            "name": "phone",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "b4561f9d-592f-15a4-7df6-c9aab4d26372"
+          },
+          {
+            "name": "email",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "3c6332f2-e18c-c165-f8c3-84b72a7b9a64"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1311.8400288940384,
+          "top": 617.4400028930644,
+          "zIndex": 479,
+          "widthName": 69,
+          "widthComment": 60
+        },
+        "id": "5dd466b1-bd31-e78d-e736-9ddce9294d1e"
+      },
+      {
+        "name": "airplanes",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "PK plane registration number",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 170,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "35716f13-7d17-49a7-c54e-63e75d9a9376"
+          },
+          {
+            "name": "capacity",
+            "comment": "NN for IRL",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 63,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e1ca5379-3cea-83ff-516d-575e86b8c352"
+          },
+          {
+            "name": "location",
+            "comment": "NN for IRL",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 63,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "3939b31c-1bdf-d6d1-99e5-11096165b1b2"
+          },
+          {
+            "name": "status",
+            "comment": "NN for IRL",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 63,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5b5bbbd4-a0aa-2f54-3730-4a02f2f15ddd"
+          },
+          {
+            "name": "airline_id",
+            "comment": "REFERENCES airlines",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 135,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "cae651cc-6c53-8c5f-ecfe-d484616520aa"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 24.639999597167886,
+          "top": 198.40000036621083,
+          "zIndex": 485,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "db6bd328-0bfb-678d-abc5-6374ea2e45c1"
+      },
+      {
+        "name": "airlines",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f3cbaa71-50ba-4ad9-26ef-69a155d83adb"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 26.07999919433572,
+          "top": 38.23999941406237,
+          "zIndex": 261,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "f8f9b6f8-d85a-6326-e5b9-537da905e1e0"
+      },
+      {
+        "name": "seats",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "PK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "dd446901-bbc1-ff09-34f0-98dab55039e6"
+          },
+          {
+            "name": "plane_id",
+            "comment": "REFERENCES airplanes",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 147,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9929ab15-f815-0942-ceca-b330fec473b6"
+          },
+          {
+            "name": "seat_number",
+            "comment": "",
+            "dataType": "TINYTEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 78,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "5ef1c0d9-625a-3521-8d2d-6511e7091552"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 718.7200077636709,
+          "top": 468.00000274658197,
+          "zIndex": 500,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "36cc6cfb-ae46-43c4-5302-91bd544a3911"
+      },
+      {
+        "name": "countries",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "78ef3ece-aac2-adfd-776c-7cfe1651b4b3"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8131006e-6e64-7fbb-ff7c-ec92576ab307"
+          },
+          {
+            "name": "",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "aaa4782f-a051-7b7f-9e7c-a3447cda1929"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 715.8400072875977,
+          "top": 43.679999011230436,
+          "zIndex": 333,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "3dedd6ba-e414-15e5-bcdd-decbb9dacc7a"
+      },
+      {
+        "name": "cities",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": true,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b16c0068-c5cc-a29b-0d80-1d5ddc2c4cf9"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6e08ea51-4487-dc47-d088-b010a73f116a"
+          },
+          {
+            "name": "country_id",
+            "comment": "REFERENCES COUNTRIES",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 62,
+              "widthComment": 171,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fecca0c9-6cfa-a401-6b2a-a97896aeef9d"
+          },
+          {
+            "name": "from_city",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1033bbd7-ef66-d9f1-b71d-4d33e1e0562f"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 711.6800070678715,
+          "top": 255.04000234375036,
+          "zIndex": 403,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "8d196c9a-554d-86d7-6755-ce061b16976c"
+      },
+      {
+        "name": "flights",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "PK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "dde97a52-b7de-6559-ba74-6025511d6022"
+          },
+          {
+            "name": "airplane_d",
+            "comment": "REFERENCES airplanes",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 62,
+              "widthComment": 147,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e5e904b8-47c1-7351-9bfc-e7af9389d877"
+          },
+          {
+            "name": "from_city",
+            "comment": "REFERENCES cities",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 124,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "010f1605-584f-ccaa-443e-15dd737edcf4"
+          },
+          {
+            "name": "to_city",
+            "comment": "REFERENCES cities",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 124,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "db208108-17b7-52b2-e4d4-9a84a9947edc"
+          },
+          {
+            "name": "departure",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66,
+              "widthDefault": 60
+            },
+            "id": "2b46f259-0c42-2d0d-930c-3026e16bdc2d"
+          },
+          {
+            "name": "arrival",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66,
+              "widthDefault": 60
+            },
+            "id": "0f0946c9-8f73-24d0-a5d5-8cccd331595b"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 56.00000054931641,
+          "top": 448.0000042114238,
+          "zIndex": 499,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "822e8912-5021-ce57-fcaa-0ba1c90da4d3"
+      },
+      {
+        "name": "itinerary",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "PK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f981b407-0796-3a3b-4a03-1c3eab427b09"
+          },
+          {
+            "name": "ticket_id",
+            "comment": "REFERENCES tickets",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 132,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f0f52b36-a010-c75d-273c-927877fc0f25"
+          },
+          {
+            "name": "flight_id",
+            "comment": "REFERENCES flights",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 129,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5190d5e8-a1cd-8c2b-e730-9058759c06a6"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 28.159993444823872,
+          "top": 723.0400237670892,
+          "zIndex": 489,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "cf589d75-e437-d9f4-320b-824ea83d9226"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "start": {
+          "tableId": "db6bd328-0bfb-678d-abc5-6374ea2e45c1",
+          "columnIds": [
+            "35716f13-7d17-49a7-c54e-63e75d9a9376"
+          ],
+          "x": 481.6399995971679,
+          "y": 284.15000036621086,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "36cc6cfb-ae46-43c4-5302-91bd544a3911",
+          "columnIds": [
+            "9929ab15-f815-0942-ceca-b330fec473b6"
+          ],
+          "x": 718.7200077636709,
+          "y": 533.2500027465819,
+          "direction": "left"
+        },
+        "id": "5c14c6e6-40f8-0b0a-74ca-5be2dd3449da",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "f8f9b6f8-d85a-6326-e5b9-537da905e1e0",
+          "columnIds": [
+            "f3cbaa71-50ba-4ad9-26ef-69a155d83adb"
+          ],
+          "x": 199.57999919433573,
+          "y": 127.73999941406237,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "db6bd328-0bfb-678d-abc5-6374ea2e45c1",
+          "columnIds": [
+            "cae651cc-6c53-8c5f-ecfe-d484616520aa"
+          ],
+          "x": 253.1399995971679,
+          "y": 198.40000036621083,
+          "direction": "top"
+        },
+        "id": "e6730acd-8f67-0eba-8f63-559fb82625e5",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": true,
+        "start": {
+          "tableId": "822e8912-5021-ce57-fcaa-0ba1c90da4d3",
+          "columnIds": [
+            "010f1605-584f-ccaa-443e-15dd737edcf4"
+          ],
+          "x": 498.0000005493164,
+          "y": 496.0000042114238,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "8d196c9a-554d-86d7-6755-ce061b16976c",
+          "columnIds": [
+            "b16c0068-c5cc-a29b-0d80-1d5ddc2c4cf9"
+          ],
+          "x": 711.6800070678715,
+          "y": 368.29000234375036,
+          "direction": "left"
+        },
+        "id": "643ea6f8-d670-0f99-9f2d-c299deac3db3",
+        "relationshipType": "One"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "3dedd6ba-e414-15e5-bcdd-decbb9dacc7a",
+          "columnIds": [
+            "aaa4782f-a051-7b7f-9e7c-a3447cda1929"
+          ],
+          "x": 889.3400072875977,
+          "y": 174.17999901123045,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "8d196c9a-554d-86d7-6755-ce061b16976c",
+          "columnIds": [
+            "fecca0c9-6cfa-a401-6b2a-a97896aeef9d"
+          ],
+          "x": 941.6800070678715,
+          "y": 255.04000234375036,
+          "direction": "top"
+        },
+        "id": "9b1fd35b-6cef-2892-2092-29406476106a",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "822e8912-5021-ce57-fcaa-0ba1c90da4d3",
+          "columnIds": [
+            "010f1605-584f-ccaa-443e-15dd737edcf4"
+          ],
+          "x": 498.0000005493164,
+          "y": 592.0000042114239,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "8d196c9a-554d-86d7-6755-ce061b16976c",
+          "columnIds": [
+            "1033bbd7-ef66-d9f1-b71d-4d33e1e0562f"
+          ],
+          "x": 711.6800070678715,
+          "y": 292.79000234375036,
+          "direction": "left"
+        },
+        "id": "02e5456a-5fbc-9d2a-017e-b1d591d2396d",
+        "relationshipType": "OneOnly"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "822e8912-5021-ce57-fcaa-0ba1c90da4d3",
+          "columnIds": [
+            "dde97a52-b7de-6559-ba74-6025511d6022"
+          ],
+          "x": 277.0000005493164,
+          "y": 640.0000042114239,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "cf589d75-e437-d9f4-320b-824ea83d9226",
+          "columnIds": [
+            "f981b407-0796-3a3b-4a03-1c3eab427b09"
+          ],
+          "x": 237.65999344482387,
+          "y": 723.0400237670892,
+          "direction": "top"
+        },
+        "id": "e13b5019-fab7-fb9e-dccb-146192b71886",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "e0a6126e-f881-d362-05d5-4acc6a04d948",
+          "columnIds": [
+            "7cc0b9f5-6dda-4cdb-ddb0-e7370483c58a"
+          ],
+          "x": 702.0800248291014,
+          "y": 742.690007470704,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "cf589d75-e437-d9f4-320b-824ea83d9226",
+          "columnIds": [
+            "f0f52b36-a010-c75d-273c-927877fc0f25"
+          ],
+          "x": 447.1599934448239,
+          "y": 788.2900237670892,
+          "direction": "right"
+        },
+        "id": "db3b061e-b6b2-7494-74ba-bf408e518e3a",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "5dd466b1-bd31-e78d-e736-9ddce9294d1e",
+          "columnIds": [
+            "0036c865-5895-c4bd-f863-e19037659ea8"
+          ],
+          "x": 1311.8400288940384,
+          "y": 703.1900028930644,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "e0a6126e-f881-d362-05d5-4acc6a04d948",
+          "columnIds": [
+            "f393fdd5-0103-0a9c-19dc-a232d7a4a1f0"
+          ],
+          "x": 1170.0800248291014,
+          "y": 742.690007470704,
+          "direction": "right"
+        },
+        "id": "03875863-25a3-8ffa-ada1-d34646ae019a",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "36cc6cfb-ae46-43c4-5302-91bd544a3911",
+          "columnIds": [
+            "dd446901-bbc1-ff09-34f0-98dab55039e6"
+          ],
+          "x": 946.7200077636709,
+          "y": 598.5000027465819,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "e0a6126e-f881-d362-05d5-4acc6a04d948",
+          "columnIds": [
+            "1666efbc-38cd-9cf2-8cc3-10c37d43a970"
+          ],
+          "x": 936.0800248291014,
+          "y": 677.440007470704,
+          "direction": "top"
+        },
+        "id": "7375d3e5-7952-6d95-1775-70b009c3081d",
+        "relationshipType": "OneOnly"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "db6bd328-0bfb-678d-abc5-6374ea2e45c1",
+          "columnIds": [
+            "35716f13-7d17-49a7-c54e-63e75d9a9376"
+          ],
+          "x": 253.1399995971679,
+          "y": 369.90000036621086,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "822e8912-5021-ce57-fcaa-0ba1c90da4d3",
+          "columnIds": [
+            "e5e904b8-47c1-7351-9bfc-e7af9389d877"
+          ],
+          "x": 277.0000005493164,
+          "y": 448.0000042114238,
+          "direction": "top"
+        },
+        "id": "01b40371-b773-6388-343f-1f0723ff9552",
+        "relationshipType": "OneN"
+      }
+    ]
+  }
+}

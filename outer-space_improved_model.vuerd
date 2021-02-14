@@ -1,0 +1,523 @@
+{
+  "canvas": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    }
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "planets",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "PK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "056803a6-a11b-9008-8afb-de9f30c71706"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5c91c648-e253-fffc-dfac-004b306b6a1e"
+          },
+          {
+            "name": "orbital_period_in_years",
+            "comment": "",
+            "dataType": "FLOAT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 137,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f16315b6-1624-0e55-a825-6ae717bdace1"
+          },
+          {
+            "name": "star_id",
+            "comment": "FK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e349173b-c241-0d9b-d970-b95995f97f8f"
+          },
+          {
+            "name": "moon_id",
+            "comment": "FK",
+            "dataType": "INTEGER",
+            "default": "none",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "f3690e64-5205-5112-cab5-53d98858814d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 804.8000230712886,
+          "top": 509.9200156372071,
+          "zIndex": 213,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "6b9d0af4-0fbb-a2d5-2db6-c3058367ff69"
+      },
+      {
+        "name": "moons",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "PK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9f6c1602-d378-57d2-d379-42e0541040c7"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "16e82c6a-9b54-c17b-19fd-da5ca16888b7"
+          },
+          {
+            "name": "size",
+            "comment": "",
+            "dataType": "FLOAT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "14476c7f-0525-090e-d139-bd8b4fdf2965"
+          },
+          {
+            "name": "orbital_period_in_hours",
+            "comment": "",
+            "dataType": "FLOAT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 138,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "94cd2c50-999b-a116-b12a-1b9942ec0d11"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 808.6400232177749,
+          "top": 161.4400023437497,
+          "zIndex": 231,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "0f5ddf56-a86a-08f9-76bd-5ec57d479f4c"
+      },
+      {
+        "name": "stars",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "pk",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "73801e1e-df51-cd63-6c75-7e3d444afc40"
+          },
+          {
+            "name": "name",
+            "comment": "PK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "57ebda84-4df3-d184-2730-ef30c2f3b5a0"
+          },
+          {
+            "name": "size",
+            "comment": "",
+            "dataType": "FLOAT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5e2848c5-d179-dccb-9917-1b578e54a80b"
+          },
+          {
+            "name": "galaxy_id",
+            "comment": "FK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0670221d-0898-b954-3cf1-0423c6787c67"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 215.3600005859361,
+          "top": 520.4800160400385,
+          "zIndex": 217,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "962d59cc-5755-ad1d-c755-42751b05b132"
+      },
+      {
+        "name": "galaxy",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "PK",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6a2456ab-b55f-6ced-34f0-5d35f88385f1"
+          },
+          {
+            "name": "name",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64,
+              "widthDefault": 60
+            },
+            "id": "42ac2b9d-14a8-1394-9820-fc9b36f2f598"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 214.40000054931636,
+          "top": 164.32000245361246,
+          "zIndex": 209,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "id": "22c46c6f-70bd-47af-b3d7-9ddc89d6aefd"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "start": {
+          "tableId": "962d59cc-5755-ad1d-c755-42751b05b132",
+          "columnIds": [
+            "73801e1e-df51-cd63-6c75-7e3d444afc40"
+          ],
+          "x": 562.3600005859361,
+          "y": 595.9800160400385,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "6b9d0af4-0fbb-a2d5-2db6-c3058367ff69",
+          "columnIds": [
+            "e349173b-c241-0d9b-d970-b95995f97f8f"
+          ],
+          "x": 804.8000230712886,
+          "y": 595.6700156372071,
+          "direction": "left"
+        },
+        "id": "352c7069-21a9-0b65-7d78-4e0010b23021",
+        "relationshipType": "OneN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "0f5ddf56-a86a-08f9-76bd-5ec57d479f4c",
+          "columnIds": [
+            "9f6c1602-d378-57d2-d379-42e0541040c7"
+          ],
+          "x": 1023.1400232177749,
+          "y": 312.4400023437497,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "6b9d0af4-0fbb-a2d5-2db6-c3058367ff69",
+          "columnIds": [
+            "f3690e64-5205-5112-cab5-53d98858814d"
+          ],
+          "x": 1016.8000230712886,
+          "y": 509.9200156372071,
+          "direction": "top"
+        },
+        "id": "7323d23b-3034-6520-20cc-276412c7b01e",
+        "relationshipType": "ZeroN"
+      },
+      {
+        "identification": false,
+        "start": {
+          "tableId": "22c46c6f-70bd-47af-b3d7-9ddc89d6aefd",
+          "columnIds": [
+            "6a2456ab-b55f-6ced-34f0-5d35f88385f1"
+          ],
+          "x": 389.90000054931636,
+          "y": 274.32000245361246,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "962d59cc-5755-ad1d-c755-42751b05b132",
+          "columnIds": [
+            "0670221d-0898-b954-3cf1-0423c6787c67"
+          ],
+          "x": 388.86000058593606,
+          "y": 520.4800160400385,
+          "direction": "top"
+        },
+        "id": "2b2b3ce0-48f7-df85-af4e-816e2c5dcc8a",
+        "relationshipType": "OneN"
+      }
+    ]
+  }
+}
